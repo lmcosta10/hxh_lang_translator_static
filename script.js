@@ -20,7 +20,7 @@ function createKeyboard() {
 
         // Create an img element inside the button
         const img = document.createElement('img');
-        img.src = `../symbols/${fileName}`;
+        img.src = `${fileName}`;
         img.alt = symbol;
 
         button.appendChild(img); // Add image to the button
@@ -43,7 +43,7 @@ function updateSentenceDisplay() {
     } else {
         currentSentence.forEach((symbol) => {
             const img = document.createElement('img');
-            img.src = `symbols/${symbol}.png`; // Path to the symbol image
+            img.src = `${symbol}.png`; // Path to the symbol image
             img.classList.add('symbol-image'); // Optional: Add a class for styling
             sentenceDisplay.appendChild(img);
         });
